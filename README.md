@@ -1,10 +1,8 @@
 # 📚 LibTrack – Library Management System
 
-LibTrack is a frontend-focused Library Management System designed with a calm, aesthetic UI and realistic library workflows. The project demonstrates strong frontend fundamentals, state management, and user-centric design.
+LibTrack is a frontend-focused Library Management System designed with a calm UI and realistic library workflows. The project demonstrates strong frontend fundamentals, state management, and user-centric design.
 
----
-
-## ✨ Features
+##  Features
 
 ### User Side
 - View all books in a clean card layout
@@ -19,18 +17,14 @@ LibTrack is a frontend-focused Library Management System designed with a calm, a
 - Track issued vs available books
 - Separate admin and user views
 
----
-
-## 🛠 Tech Stack
+## Tech Stack
 
 - HTML
 - CSS (custom aesthetic UI)
 - Vanilla JavaScript
 - localStorage (mock database)
 
----
-
-## 🎨 UI & UX Highlights
+## UI & UX Highlights
 
 - Calm, minimal color palette
 - Card-based layout with soft shadows
@@ -38,18 +32,14 @@ LibTrack is a frontend-focused Library Management System designed with a calm, a
 - Responsive grid design
 - Clean typography
 
----
-
-## 🧠 Key Learnings
+## Key Learnings
 
 - Frontend state management without a backend
 - DOM manipulation and dynamic rendering
 - UI/UX design principles
 - Separation of concerns (user vs admin logic)
 
----
-
-## 🚀 Future Improvements
+## Future Improvements
 
 - Backend integration with REST APIs
 - Role-based authentication
@@ -59,12 +49,7 @@ LibTrack is a frontend-focused Library Management System designed with a calm, a
 
 ---
 
-## 📎 Live Demo
+##  Live Demo
 
 (Add Netlify / GitHub Pages link here)
 
----
-
-## 👩‍💻 Author
-
-Built with care to demonstrate frontend system design and UI engineering.
