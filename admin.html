@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LibTrack Admin</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1>LibTrack Admin</h1>
+    <a href="index.html">User View</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Admin Dashboard</h2>
+    <p>Manage library inventory</p>
+  </section>
+
+  <section class="admin-container">
+    <form id="add-book-form" class="admin-card">
+      <h3>Add New Book</h3>
+      <input id="title" placeholder="Title" required />
+      <input id="author" placeholder="Author" required />
+      <input id="category" placeholder="Category" required />
+      <button type="submit">Add Book</button>
+    </form>
+
+    <section id="admin-book-list" class="grid"></section>
+  </section>
+
+  <script src="js/data.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LibTrack</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1>LibTrack</h1>
+    <div class="nav-actions">
+      <button id="theme-toggle">🌙</button>
+      <a href="admin.html">Admin</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h2>Your digital library</h2>
+    <p>Search, issue, and manage books effortlessly</p>
+  </section>
+
+  <div class="command-bar">
+    <input type="text" id="search" placeholder="🔍 Search by title or author" />
+  </div>
+
+  <section class="stats">
+    <div>Total <span id="total">0</span></div>
+    <div>Issued <span id="issued">0</span></div>
+    <div>Available <span id="available">0</span></div>
+  </section>
+
+  <section id="book-list" class="grid"></section>
+
+  <div id="toast"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
