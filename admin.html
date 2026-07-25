@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LibTrack — Back Office</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="drawer-tab">STAFF ONLY · CATALOG UPKEEP</div>
+  <div class="title-row">
+    <div><h1 class="brand">Back <em class="office">Office</em></h1></div>
+    <div class="tagline">add new titles, retire old ones, keep the shelf honest</div>
+  </div>
+  <nav class="pages">
+    <a href="index.html">Reading Room</a>
+    <a href="admin.html" class="active">Back Office</a>
+  </nav>
+</header>
+
+<main>
+  <div class="stats" id="stats"></div>
+
+  <div class="panels">
+    <div class="panel">
+      <h2>Catalog Ledger</h2>
+      <table>
+        <thead>
+          <tr><th>Title</th><th>Genre</th><th>Copies</th><th>Issued</th><th>Available</th><th></th></tr>
+        </thead>
+        <tbody id="ledgerBody"></tbody>
+      </table>
+    </div>
+
+    <div class="panel">
+      <h2>Add to Catalog</h2>
+      <form id="addForm">
+        <div class="field">
+          <label for="fTitle">Title</label>
+          <input id="fTitle" type="text" placeholder="e.g. The Weight of Water" required>
+        </div>
+        <div class="field">
+          <label for="fAuthor">Author</label>
+          <input id="fAuthor" type="text" placeholder="e.g. Alex Munro" required>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="fGenre">Genre</label>
+            <select id="fGenre"></select>
+          </div>
+          <div class="field">
+            <label for="fCopies">Copies</label>
+            <input id="fCopies" type="number" min="1" max="20" value="1" required>
+          </div>
+        </div>
+        <button id="addBtn" type="submit">Add to Catalog</button>
+        <div class="hint">A catalog number is assigned automatically.</div>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer>LibTrack — frontend-only demo, data kept in this browser's localStorage.</footer>
+
+<script src="js/data.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

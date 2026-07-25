@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LibTrack — The Shelf</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="drawer-tab">CATALOG · SHELF VIEW</div>
+  <div class="title-row">
+    <div>
+      <h1 class="brand">Lib<em>Track</em></h1>
+    </div>
+    <div class="tagline">a small library, kept in good order — search the shelves, borrow, return</div>
+  </div>
+  <nav class="pages">
+    <a href="index.html" class="active">Reading Room</a>
+    <a href="admin.html">Back Office</a>
+  </nav>
+</header>
+
+<div class="controls">
+  <div class="search-slot">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input id="search" type="text" placeholder="Search by title or author…">
+  </div>
+  <div class="genre-chips" id="genreChips"></div>
+</div>
+
+<main id="shelves"></main>
+
+<div class="overlay" id="overlay">
+  <div class="card-modal" id="cardModal">
+    <button class="close-btn" id="closeBtn">✕</button>
+    <div class="card-top">
+      <div>
+        <h2 id="mTitle"></h2>
+        <p class="author" id="mAuthor"></p>
+      </div>
+    </div>
+    <div class="meta-row" id="mMeta"></div>
+    <div class="stamp-zone">
+      <div>
+        <div class="stamp" id="mStamp"></div>
+        <div class="due" id="mDue" style="margin-top:8px;"></div>
+      </div>
+      <button class="action-btn" id="mAction"></button>
+    </div>
+  </div>
+</div>
+
+<footer>LibTrack — frontend-only demo, data kept in this browser's localStorage.</footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
