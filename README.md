@@ -3,7 +3,7 @@
 LibTrack is a frontend-focused Library Management System with a card-catalog inspired UI: books sit on animated, color-coded shelves as spines, and issuing/returning a book stamps an ink-style status onto a library card. No backend — everything runs in the browser with `localStorage` acting as the database.
 
 ## Live Demo
-(Add Netlify / GitHub Pages link here)
+https://likithha.github.io/libtrack-library-management-system/
 
 ## Features
 
